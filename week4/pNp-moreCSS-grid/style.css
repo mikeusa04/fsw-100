@@ -1,0 +1,58 @@
+.topnav {
+    background-color: rgb(228, 217, 217);
+    overflow: hidden;
+    position: fixed;
+}
+.topnav a {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 110px;
+    text-decoration: none;
+    font-style: italic;
+    /*border-right: 1px solid black;*/
+}
+#last-child {
+    border-right: none;
+}
+.topnav a:hover {
+    background-color: rgb(248, 83, 83);
+    color: white;
+}
+.topnav a.active {
+    background-color: rgb(141, 137, 137);
+    color: white;
+}
+img {
+    float: left;
+    margin: 10px;
+    
+}
+div {
+    border: 1px solid black
+    width: none;
+    height: 220px;
+    padding-top: 50px;
+    color: white
+}
+h2, h3, h5 {
+    text-align: left;
+}
+h1 {
+    text-align: center;
+    background-color: red;
+    font-size: 50px;
+    margin: 1px;
+    padding: 20px;
+}
+body {
+    background-color:rgb(255, 81, 0);
+}
+footer {
+    background-color: rgb(235, 209, 197);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
