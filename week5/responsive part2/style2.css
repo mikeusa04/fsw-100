@@ -1,0 +1,68 @@
+header {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 5px;
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+}
+.nav-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: lightsteelblue;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / 5;
+}
+.aside1 {
+    background-color: lightsteelblue;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / 2;
+}
+.aside1 > div {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+main {
+    background-color: lightsteelblue;
+    text-align: center;
+    padding: 10px;
+    grid-column: 2 / 4;
+}
+aside {
+    background-color: lightsteelblue;
+    text-align: center;
+    padding: 10px;
+    grid-column: 4 / 5;
+}
+footer {
+    background-color: lightsteelblue;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / 5
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px auto auto 100px; /* or use repat(4,1fr) or
+    grid-template-columns: repeat(autofit, minmax(100px, 1fr));*/
+    background-color: lightgray;
+    padding: 10px;
+    gap: 10px;
+}
+@media only screen and  (max-width: 768px) {
+    aside {
+        grid-column: 1 / 5;
+    }
+    main {
+        grid-column: 2 / 5;
+    }
+}
+@media only screen and  (max-width: 600px) {
+    .aside1 {
+        grid-column: 1 / 5;
+    }
+    main {
+        grid-column: 5 / 1;
+    }
+}
