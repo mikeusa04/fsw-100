@@ -1,0 +1,127 @@
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightgreen;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 /-1;
+}
+header {
+    /*text-align: center;*/
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    background-color: dodgerblue;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1px;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    /* or use display: flex like header above*/
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: lightskyblue;
+    padding: 10px;
+    gap: 10px;
+}
+/*.main-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+}
+.grid-item {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+    border: 1px solid black;
+    
+}
+#box1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: blue;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition: width 2s;
+}
+#box1:hover {
+    width: 200px;
+}
+#box2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: red;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition: height 4s, width 2s;
+}
+#box2:hover {
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+}
+#box3 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+p {
+    display: none;
+    background-color: yellow;
+    padding: 5px;
+}
+#box3:hover p {
+    display: block;
+}
+#box4 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+#box4:hover {
+    opacity: 1.0;
+}
+#box5 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    transition: transform 2s
+}
+#box5:hover {
+    transform: scale(3.5);
+}
+#box6 {
+    width: 100px;
+    height: 100px;
+    border:1px solid black;
+    transition: width 2s, height 2s, transform 2s;
+}
+#box6:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}
