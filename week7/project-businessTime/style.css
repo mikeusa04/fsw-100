@@ -13,16 +13,27 @@ body {
     background-color: lightblue;
     padding: 10px;
 }
-a {
+.flex-container a {
     text-decoration: none;
     border: 1px solid black;
     width: 100%;
     padding: 5px;
     margin: 0;
     text-align: center;
+    border-radius: 5px;
     border-left: none;
     border-right: none;
     color:blue;
+    text-shadow: 0px 0px 9px blue;
+}
+.flex-container a.active {
+    background-color: dodgerblue;
+    color: ghostwhite;
+}
+.flex-container a:hover {
+    color: whitesmoke;
+    background-color: blue;
+    transition: 1s ease-out;
 }
 h1 {
     text-align: center;
@@ -78,12 +89,17 @@ footer {
 footer ul {
     list-style: none;
 }
+#mike {
+    text-shadow: 0px 0px 3px whitesmoke;
+    font-family: serif;
+}
 @media only screen and (min-width: 400px) {
     .flex-container{
-    flex-direction: row;
-    justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    a {
+    .flex-container a {
         border: none;
     }
 }
@@ -92,7 +108,7 @@ footer ul {
         grid-column: 1 / 3;
     }
 }
-@media only screen and (min-width: 967px) {
+@media only screen and (min-width: 1000px) {
     #wrapper {
         display: flex;
     }

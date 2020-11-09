@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: black;
+    margin: 0;
+    height: auto;
+}
+.nav-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*background-color: lightblue;*/
+    padding: 10px;
+}
+.nav-flex-container a {
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    color:rgb(224, 4, 224);
+    text-shadow: 0 0 5px whitesmoke;
+}
+.nav-flex-container a.active {
+    background-color: purple;
+    color: ghostwhite;
+}
+.nav-flex-container a:hover {
+    color: whitesmoke;
+    background-color: rgb(248, 38, 248);
+    transition: 1s ease-out;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 40px purple;
+    text-shadow: 0px 0px 40px whitesmoke;
+    color:rgb(138, 5, 138);
+    /*color: rgb(66, 66, 194)*/
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul li {
+    text-align: center;
+    right: 20px;
+    position: relative;
+    /*display: block;*/
+    color: whitesmoke;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background-color: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+/*or use this without #a1#a2#a3 
+li a {
+    color: white
+}*/
+#a1 a {
+    color: rgb(43, 106, 243);
+}
+#a2 a {
+    color: rgb(236, 11, 56);
+}
+#a3 a {
+    color: rgb(250, 4, 4);
+}
+ul li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    /*background: #d35400;*/
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+ul li:nth-child(1):before {
+    background: #5a87e2;
+}
+ul li:nth-child(2):before {
+    background: #E1306C;
+}
+ul li:nth-child(3):before {
+    background: #ff0000;
+}
+ul li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
+    /*box-shadow: 0 0 15px #d35400;*/
+}
+ul li:nth-child(1):hover:before {
+    box-shadow: 0 0 15px #5d8be6;
+}
+ul li:nth-child(2):hover:before {
+    box-shadow: 0 0 15px  #E1306C;
+}
+ul li:nth-child(3):hover:before {
+    box-shadow: 0 0 15px #ff0000;
+}
+ul li:nth-child(1):hover {
+    color: #365fb1;
+    box-shadow: 0 0 15px #3374f5;
+    text-shadow: 0 0 15 #34569b;
+}
+ul li:nth-child(2):hover {
+    color: #f30957;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15 #E1306C;
+}
+ul li:nth-child(3):hover {
+    color: #f70808;
+    box-shadow: 0 0 15px #f12323;
+    text-shadow: 0 0 15 #f12121;
+}
+h2 {
+    color:rgb(138, 5, 138);
+    text-align: center;
+    margin-top: 100px;
+}
+address {
+    color:rgb(138, 5, 138);
+    text-align: center;
+}
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+iframe {
+    box-shadow: 0px 0px 150px purple;
+    padding: 40px;
+    margin: 50px;
+}
+#audio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+footer {
+    background-color:rgb(63, 4, 63);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0px 0px 40px purple;
+    text-shadow: 0px 0px 5px whitesmoke;
+}
+@media only screen and (min-width: 400px) {
+    .nav-flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .nav-flex-container a {
+        border: none;
+    }
+}
+@media only screen and (min-width: 450px) {
+    iframe {
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    iframe {
+        width: 650px;
+        height: 600px;
+    }
+}
