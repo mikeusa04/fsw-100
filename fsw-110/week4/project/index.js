@@ -1,21 +1,4 @@
-/*function calc() {
-    var a = parseInt(document.querySelector("#value1").value);
-    var b = parseInt(document.querySelector("#value2").value);
-    var op = document.querySelector("#operator").value;
-    var calculate;
-    if (op == "add"){
-        calculate = a + b;
-    } else if (op == "min") {
-        calculate = a - b;
-    } else if (op == "div") {
-        calculate = a / b;
-    } else if (op == "mul") {
-        calculate = a * b;
-    }
-    document.querySelector("#result").innerHTML = calculate;
-}*/
-
-/*function add(){
+function add(){
     fst=parseInt(myform.fst.value);
     snd=parseInt(myform.snd.value);
     result=fst+snd;
@@ -23,29 +6,29 @@
 }
 
 function subtract(){
-    a = parseInt(myform1.a.value);
-    b = parseInt(myform1.b.value);
-    result = a - b;
+    a=parseInt(myform1.a.value);
+    b=parseInt(myform1.b.value);
+    result=a-b;
     myform1.result.value=result;
 }
 
 function multiply(){
-    c = parseInt(myform2.c.value);
-    d = parseInt(myform2.d.value);
-    result = c * d;
+    c=parseInt(myform2.c.value);
+    d=parseInt(myform2.d.value);
+    result=c*d;
     myform2.result.value=result;
 }
 
 function divide(){
-    e = parseInt(myform3.e.value);
-    f = parseInt(myform3.f.value);
-    result = e / f;
+    e=parseInt(myform3.e.value);
+    f=parseInt(myform3.f.value);
+    result=e/f;
     myform3.result.value=result;
 }
 
 //var myform = document.getElementById("myform"); or
 //document.getElementById("myform").style.backgroundColor = "yellow";
-/*document.getElementById("myform").style.cssText = "border: 2px solid black; padding: 20px; margin: 20px; background-color: yellow"
+document.getElementById("myform").style.cssText = "border: 2px solid black; padding: 20px; margin: 20px; background-color: yellow"
 myform.addEventListener("mouseover", function(){
     myform.style.backgroundColor = "red";
 });
@@ -63,4 +46,4 @@ myform2.addEventListener("mouseup", function(){
 document.getElementById("myform3").style.cssText = "border: 2px solid black; padding: 20px; margin: 20px; background-color: yellow"
 myform3.addEventListener("dblclick", function(){
     myform3.style.backgroundColor = "dodgerblue";
-})
+});
