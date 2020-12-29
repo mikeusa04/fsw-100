@@ -1,3 +1,17 @@
+/* For this project, you will create a basic website where all the elements are created using only JavaScript.  
+
+Requirements:
+
+No css styling required
+Must link a JS file to HTML file
+Site must have:
+a navbar with links (doesn’t need to work)
+An h1 tag
+A p tag
+A list
+Footer
+You will append created elements to the <body> tag of your html page to produce the entire site, so the only HTML tag they will add to your HTML page is the script tag.*/
+
 var nav = document.createElement("nav")    // create navbar 
 document.body.append(nav)                  //attach it to html body
 
